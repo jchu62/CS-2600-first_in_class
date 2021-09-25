@@ -6,9 +6,14 @@
 #include <time.h>
 int main(){
 time_t t;
-float meal = 5.0;
-float tax = 5.0;
-float tip = 5.0;
+float meal;
+float tax;
+float tip;
+char input[50];
+printf("Enter a tax value:");
+scanf("%f", &tax);
+printf("Enter a tip value:");
+scanf("%f", &tip);
 srand((unsigned) time(&t));
 int typeOfMeal = rand() % 4;
     switch (typeOfMeal){
