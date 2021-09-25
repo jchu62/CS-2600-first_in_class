@@ -37,4 +37,5 @@ printf("The meal cost is: %f\n", meal);
 printf("The tax amount is: %f\n", tax);
 printf("The tip amount is: %f\n", tip);
 printf("The total for the meal including tip and taxes is: %f\n", total);
+return 0;
 }
