@@ -5,9 +5,28 @@
 #include <stdlib.h>
 #include <time.h>
 int main(){
+time_t t;
 float meal = 5.0;
 float tax = 5.0;
 float tip = 5.0;
+srand((unsigned) time(&t));
+int typeOfMeal = rand() % 4;
+    switch (typeOfMeal){
+        case 0:
+        meal = 9.95;
+        break;
+        case 1:
+        meal = 4.55;
+        break;
+        case 2:
+        meal = 13.25;
+        break;
+        case 3:
+        meal = 22.35;
+        break;
+        default:
+        meal = 0.0;
+    }
 float total = meal + (meal * tax) + (meal * tip);
 printf("The meal cost is: %f\n", meal);
 printf("The tax amount is: %f\n", tax);
